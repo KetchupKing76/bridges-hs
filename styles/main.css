@@ -113,12 +113,57 @@ height: 100%;
 width: 100%;
 }
 
-
 .card.link:hover {
 box-shadow: 0 0 11px rgba(33,33,33,.2); 
 cursor: pointer;
 }
 
+/* Assignment card tag styling */
+
+.tag {
+  border-radius: 1em;
+  margin: 0em .5em;
+  color: black;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+}
+
+.tag.arrays-2d {
+  background-color: #00734b;
+}
+
+.tag.loops {
+  background-color: #3befff;
+}
+
+.tag.data-structures {
+  background-color: #ffc141;
+}
+
+.tag.game {
+  background-color: #e43348;
+}
+
+/* Remaining colors for tags */
+.tag.tag2 {
+  background-color: #ffe745;
+}
+
+.tag.tag3 {
+  background-color: #0557ff;
+}
+
+.tag.tag4 {
+  background-color: #3b44ff;
+}
+
+.tag.tag5 {
+  background-color: #ae3bff;
+}
 /* Link styling */
 a {
 text-decoration: none;
