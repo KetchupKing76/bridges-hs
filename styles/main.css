@@ -9,8 +9,28 @@ font-size: 1.2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-font-family: 'JetBrains Mono', monospace;
-font-weight: bold;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+}
+
+h2 {
+  /* border-bottom: solid thin black;
+  padding-bottom: .5rem; */
+  border-bottom-color: #e9ecef;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+/* h2:first-of-type {
+  margin-bottom: 0rem;
+  padding-top: 0rem;
+} */
+
+header h2 {
+  border-bottom-style: none;
 }
 
 /* Navbar styling */
