@@ -31,6 +31,8 @@ article h2 {
 
 header h2 {
   border-bottom-style: none;
+  padding-bottom: .5rem;
+  padding-top: 1rem;
 }
 
 /* Navbar styling */
