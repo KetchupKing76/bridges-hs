@@ -221,7 +221,7 @@ padding: 24px;
 .note {
   background-color: #dcf4ff;
   border-left: 6px solid #024e7a;
-  margin: 0 0 24px;
+  margin: 0 0 12px;
   padding: 12px;
 }
 
@@ -232,7 +232,7 @@ padding: 24px;
 .warning {
   background-color: #ffdddc;
   border-left: 6px solid #7a0602;
-  margin: 0 0 24px;
+  margin: 0 0 12px;
   padding: 12px;
 }
 
