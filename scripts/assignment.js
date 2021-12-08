@@ -3,7 +3,8 @@
   description
   summary
   imageCaption (optional)
-  additionalHtml (optional)
+  descriptionHtml (optional)
+  studentHtml (optional)
   topics
   outcomes (optional)
   studentFiles
@@ -14,15 +15,15 @@
   documentation
 */
 
-var assignment =
+const assignment =
   { 'emoji-builder' :
       { name : 'Emoji Builder'
       , description : 'Students use their undertanding of 2D arrays to create an emoji using the BRIDGES NonBlockingGame class. This project is indended to build student comfort with BRIDGES, so it is ungraded and there is no rubric.'
       , summary : 'Create a custom emoji using the NonBlockingGame class.'
       , topics : [ '2D arrays', 'Row-major order', 'Using API documentation' ]
       , outcomes :
-          [ { verb : 'Apply', outcome : 'Use understanding of rows and columns in order to create simple 2D pixel designs. (AP CS A Unit 8, VAR-2.F)' ]
-          , { verb : 'Apply', outcome : 'Use API documentation to figure out how to use Java library classes.' ]
+          [ { verb : 'Apply', outcome : 'Use understanding of rows and columns in order to create simple 2D pixel designs. (AP CS A Unit 8, VAR-2.F)' }
+          , { verb : 'Apply', outcome : 'Use API documentation to figure out how to use Java library classes.' }
           ]
       , studentFiles :
           [ { name : 'Emoji Builder Student Worksheet', link : 'https://docs.google.com/document/d/17uc1W7pxf6pxbS_xacMSOayZuCbCsvwekh_pyVOwQrc/view' } ]
@@ -45,7 +46,7 @@ var assignment =
       , scaffoldFiles :
           [ { name : 'Shapes.java', link : 'https://drive.google.com/file/d/1-Cxx-7ADuvfBi7NKBn4mrE2bLitVFaGj/view' } ]
       , teacherFiles : [ 'Shape Collection Worksheet Answer Key' ]
-      , documentation : [ 'Bridges', 'SymbolCollection', 'Circle', 'Rectangle', 'Polygon', 'Polyline', 'Text' ]
+      , documentation : [ 'Bridges', 'SymbolCollection', 'Symbol', 'Circle', 'Rectangle', 'Polygon', 'Polyline', 'Text' ]
       }
 
   , 'pattern-builder' :
@@ -115,8 +116,8 @@ var assignment =
           [ { name : 'GameBasics I Scaffold', link : 'https://docs.google.com/document/d/12IwOhLCPeh-HKLuBa5_YOdQOIx3ynKHFocXl0JwyRsQ/view' }
           , { name : 'GameBasics1.java', link : 'https://drive.google.com/file/d/1ehoM_yAnQWs_X1GOq3OIgeHzvzA8gou6/view' }
           ]
-      , teacherFiles : 'GameBasics I Teacher Walkthrough'
-      , solutionFiles : 'GameBasics1.java'
+      , teacherFiles : [ 'GameBasics I Teacher Walkthrough' ]
+      , solutionFiles : [ 'GameBasics1.java' ]
       , documentation : [ 'NonBlockingGame', 'GameBase', 'NamedColor', 'NamedSymbol' ]
       }
 
@@ -139,7 +140,7 @@ var assignment =
           [ { name : 'GameBasics II Student Worksheet', link : 'https://docs.google.com/document/d/1liUUBin6QVxC7EpL5wcU-WyqfXMynSyZryfUUeyUlsQ/view' } ]
       , scaffoldFiles :
           [ { name : 'GameBasics II Scaffold', link : 'https://docs.google.com/document/d/1Y2QvUvjDJBdMJGDoghOkoUF2p4U1s6717-L9Z_Vu56g/view' }
-          , { name : 'GameBasics2.java', link : 'https://drive.google.com/file/d/1lQoGbIb_OVW-4sRZ_CGM7rli_Bs0Tc9l/view' } ]
+          , { name : 'GameBasics2.java', link : 'https://drive.google.com/file/d/1lQoGbIb_OVW-4sRZ_CGM7rli_Bs0Tc9l/view' }
           ]
       , teacherFiles : [ 'GameBasics II Teacher Walkthrough' ]
       , solutionFiles : [ 'GameBasics2.java' ]
@@ -218,7 +219,6 @@ var assignment =
           , { verb : 'Understand', outcome : 'Describe how parallel arrays can be used to keep track of changing object properties.' }
           , { verb : 'Create', outcome : 'Apply the above cognitive skills with 2D data structure to develop original solutions and conduct requirements testing.' }
           ]
-      }
       , studentFiles :
           [ { name : 'Sudoku Student Worksheet', link : 'https://docs.google.com/document/d/1MHWUL7-kknUB2tD0W-fykQceUFlWlG1q-HSSh2HrlMk/view' } ]
       , scaffoldFiles :
@@ -254,7 +254,8 @@ var assignment =
       , description : 'In this project, students read elevation data into a 2D array, compute the path of least elevation change using a greedy algorithm, and visualise the path with the ColorGrid class.'
       , summary : 'Given elevation data, find the path of least elevation change using a greedy algorithm.'
       , imageCaption : 'In the map above, lighter shades mean higher elevation. The red line shows a "lowest elevation change" path traveling west to east.'
-      , additionalHtml : mountainPaths
+      , descriptionHtml : mountainPathsDescription()
+      , studentHtml : mountainPathsStudent()
       , topics : [ 'Command line arguments', 'Traversing 2D arrays', 'Reading files', 'Greedy algorithm', 'ColorGrid (BRIDGES class for pixel-based graphics)' ]
       , outcomes :
           [ { verb : 'Apply', outcome : 'Use file path operations to access data files.' }
@@ -338,6 +339,94 @@ var assignment =
       , solutionFiles : [ 'Interpreter.java' ]
       , otherResources :
           [ { name : 'example-output.png', link : 'https://drive.google.com/file/d/1ehWqQIj5Yqhfw4jfOkA0LojidbM87B2O/view' } ]
-      , documentation : [ 'Bridges', 'SymbolCollection', 'Circle', 'Rectangle', 'Polygon', 'Polyline', 'Text' ]
+      , documentation : [ 'Bridges', 'SymbolCollection', 'Symbol', 'Circle', 'Rectangle', 'Polygon', 'Polyline', 'Text' ]
       }
-  }
+  };
+
+const bridgesClass =
+  { Bridges : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1connect_1_1_bridges.html'
+  , GameBase : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1games_1_1_game_base.html'
+  , NonBlockingGame : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1games_1_1_non_blocking_game.html'
+  , NamedColor : 'https://bridgesuncc.github.io/doc/java-api/current/html/enumbridges_1_1base_1_1_named_color.html'
+  , NamedSymbol : 'https://bridgesuncc.github.io/doc/java-api/current/html/enumbridges_1_1base_1_1_named_symbol.html'
+  , Grid : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_grid.html'
+  , ColorGrid : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_color_grid.html'
+  , Color : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_color.html'
+  , Element : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_element.html'
+  , GraphAdjList : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_graph_adj_list.html'
+  , DataSource : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1connect_1_1_data_source.html'
+  , EarthquakeUSGS : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1data__src__dependent_1_1_earthquake_u_s_g_s.html'
+  , Song : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1data__src__dependent_1_1_song.html'
+  , SymbolCollection : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_symbol_collection.html'
+  , Symbol : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_symbol.html'
+  , Circle : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_circle.html'
+  , Rectangle : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_rectangle.html'
+  , Polygon : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_polygon.html'
+  , Polyline : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_polyline.html'
+  , Text : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_text.html'
+  };
+
+function mountainPathsDescription() {
+  const { div, p, h2, img, figure, figcaption, ul, li, a } = HTML;
+
+  const source = p(
+    'This project is adapted from a ',
+    a({ href : 'http://nifty.stanford.edu/2016/franke-mountain-paths/' }, 'Nifty assignment'),
+    ' created by Baker Franke in 2016.'
+  );
+
+  const greedy1 = p(
+    `A greedy algorithm is an algorithm that makes locally optimal decisions to generate an approximate global optimum.
+    In this project, the optimal solution is a path with the lowest change in elevation.
+    Consider the following figure:`
+  );
+
+  const diagram = (num, direction) => figure(
+    img({ src : '/images/mountain-paths/greedy-case-' + num + '.png', alt : 'Case ' + num }),
+    figcaption('Case ' + num + ': ' + direction)
+  );
+
+  const diagrams = div({ class : 'greedy-diagram' },
+    diagram(1, 'Go down'),
+    diagram(2, 'Go forward'),
+    diagram(3, 'Forward preferred'),
+    diagram(4, 'Go up or down')
+  );
+
+  const greedy2 = div(
+    p(
+      `In each case, the green box indicates the optimal decision based on the elevation change.
+      Notice the last two cases:`
+    ),
+    ul(
+      li('Case 3: When the forward elevation change is equivalent to the up or down elevation changes, the forward choice is preferred.'),
+      li('Case 4: When the up and down elevation changes are equivalent, flip a coin to determine which way to go.')
+    ),
+    p(
+      'The central premise of the Mountain Paths project is to use this algorithm repeatedly, generating a globally optimal path.'
+    )
+  );
+
+  return div(
+    source,
+    h2('Greedy Algorithm'),
+    greedy1,
+    diagrams,
+    greedy2
+  );
+}
+
+function mountainPathsStudent() {
+  const { p, strong } = HTML;
+
+  return p(
+    `There are two student worksheets: the "Less Comfortable" worksheet and the "More Comfortable" worksheet.
+    These worksheets differ on the amount of help given to the student.`,
+    strong('"Less comfortable"'),
+    ` is best for students who are not as confident with programming,
+    and would appreciate additional tips and guidance for completing the assignment. `,
+    strong('"More comfortable"'),
+    ` is best for students who are confident, experienced programmers and would enjoy an additional challenge.
+    Both worksheets are graded the same way and result in the same finished product.`
+  );
+}
