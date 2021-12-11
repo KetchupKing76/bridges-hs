@@ -52,6 +52,20 @@ function titlebar(text) {
   document.querySelector('#insert-titlebar').appendChild(titlebar);
 }
 
+function copyright() {
+  //make HTML functions
+  const { footer, div, hr, p } = HTML;
+
+  //copyright footer
+  const copyright = footer(
+    div({ class : 'container' },
+      hr(),
+      p('All rights reserved, Copyright @2018,2019,2020. The University of North Carolina at Charlotte.')
+    )
+  );
+  document.querySelector('#insert-copyright').appendChild(copyright);
+}
+
 function assignmentPage(id) {
   const asst = assignment[id];
 

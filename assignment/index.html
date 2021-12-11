@@ -83,16 +83,12 @@
         </article>
     </main>
 
-    <footer>
-        <div class="container">
-            <hr>
-            <p>All rights reserved, Copyright @2018,2019,2020. The University of North Carolina at Charlotte.</p>
-        </div>
-    </footer>
+    <!-- Copyright footer -->
+    <div id="insert-copyright"></div>
 
     <script src="/scripts/assignment.js"></script>
     <script src="/scripts/component.js"></script>
-    
+
     <script>
         //get name of assignment from url
         const urlParams = new URLSearchParams(window.location.search);
@@ -106,10 +102,11 @@
         //set page title
         document.title = assignment[id].name + ' | BRIDGES High School';
 
-        //create navbar, titlebar, and assignment page
+        //create navbar, titlebar, assignment page, and copyright
         navbar();
         titlebar(assignment[id].name);
         assignmentPage(id);
+        copyright();
     </script>
 </body>
 
