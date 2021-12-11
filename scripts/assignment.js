@@ -1,18 +1,24 @@
 /*
-  name
-  description
-  summary
-  imageCaption (optional)
-  descriptionHtml (optional)
-  studentHtml (optional)
-  topics
-  outcomes (optional)
-  studentFiles
-  scaffoldFiles
-  teacherFiles (optional)
-  solutionFiles (optional)
-  otherResources (optional)
-  documentation
+  name                       -- name of assignment
+  description                -- description on assignment page
+  summary                    -- short description on course page
+
+  imageCaption (optional)    -- caption of example output image
+  descriptionHtml (optional) -- additional html after description
+  studentHtml (optional)     -- additional html before student worksheets
+
+  topics                     -- topics covered by assignment
+  outcomes (optional)        -- intended learning outcomes of assignment
+
+  studentFiles               -- student file names and urls
+  scaffoldFiles              -- scaffold file names and urls
+
+  teacherFiles (optional)    -- teacher file names
+  solutionFiles (optional)   -- soltion file names
+  otherResources (optional)  -- additional resources names and urls
+
+  documentation              -- names of BRIDGES classes
+                                (must be bridgesClass object keys)
 */
 
 const assignment =

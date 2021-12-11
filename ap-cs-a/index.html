@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Favicon Package -->
     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon-package/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-package/favicon-32x32.png">
@@ -13,135 +14,53 @@
     <link rel="mask-icon" href="../images/favicon-package/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
     <title>AP CS A Assignments | BRIDGES High School</title>
+
     <!--Imports-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="../styles/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/imperative-html@0.1/dist/global/elements.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-custom">
-        <div class="container">
-            <a class="navbar-brand" href="../">
-                <img src="../images/logo.svg" alt="BRIDGES Logo">
-            </a>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../overview/">Overview</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Assignments
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="../ap-cs-a/">AP Computer Science A</a></li>
-                        <li><a class="dropdown-item" href="../adv-topics/">Advanced Topics</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="titlebar-container">
-        <h1 class="title container">AP CS A Assignments</h1>
-    </div>
+    <!-- Navbar -->
+    <div id="insert-navbar"></div>
+
+    <!-- Titlebar -->
+    <div id="insert-titlebar"></div>
+
+    <!-- Links to assignments -->
     <main class="container">
         <article class="repository">
-            <!-- <h2>Unit 8: 2D Array</h2> -->
-            <!-- HTML DOM used to set location of webpage to assignment page on click  -->
-            <div class="card assignment-card link" onclick='location.href = "../assignments/emoji-builder/";'>
-                <div class="card-thumbnail">
-                    <img src="../assignments/emoji-builder/images/emoji-builder-example-output.png"
-                        alt="Emoji Builder Example Output">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Emoji Builder</h4>
-                    <p class="card-text">Create a custom emoji using the NonBlockingGame class.</p>
-                </div>
-            </div>
-
-            <div class="card assignment-card link" onclick='location.href = "../assignments/shape-collection/";'>
-                <div class="card-thumbnail">
-                    <img src="../assignments/shape-collection/images/shape-collection-example-output.png"
-                        alt="Shape Collection Example Output">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Shape Collection</h4>
-                    <p class="card-text">Draw circles, rectangles, polygons, and text.</p>
-                </div>
-            </div>
-
-            <div class="card assignment-card link" onclick='location.href = "../assignments/pattern-builder/";'>
-                <div class="card-thumbnail">
-                    <img src="../assignments/pattern-builder/images/pattern-builder-example-output-2.png"
-                        alt="Pattern Builder Example Output">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Pattern Builder</h4>
-                    <p class="card-text">Create colorful, graphical patterns using the ColorGrid class.</p>
-                </div>
-            </div>
-
-            <div class="card assignment-card link" onclick='location.href = "../assignments/square-fill/";'>
-                <div class="card-thumbnail">
-                    <img src="../assignments/square-fill/images/square-fill-example-output.png"
-                        alt="Square Fill Example Output">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Square Fill</h4>
-                    <p class="card-text">Create colorful, layered squares using the ColorGrid class.</p>
-                </div>
-            </div>
-
-            <div class="card assignment-card link" onclick='location.href = "../assignments/gamebasics-1/";'>
-                <div class="card-thumbnail">
-                    <img src="../assignments/gamebasics-1/images/gamebasics-1-example-output.png"
-                        alt="GameBasics 1 Example Output">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">GameBasics I</h4>
-                    <p class="card-text">Display a custom message using the game board grid and edit the message with keyboard input.</p>
-                </div>
-            </div>
-
-            <div class="card assignment-card link" onclick='location.href = "../assignments/gamebasics-2/";'>
-                <div class="card-thumbnail">
-                    <img src="../assignments/gamebasics-2/images/gamebasics-2-example-output.png"
-                        alt="GameBasics 2 Example Output">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">GameBasics II</h4>
-                    <p class="card-text">Create a player that can be moved around the game board grid with keyboard input.</p>
-                </div>
-            </div>
-
-            <div class="card assignment-card link" onclick='location.href = "../assignments/bugstomp/";'>
-                <div class="card-thumbnail">
-                    <img src="../assignments/bugstomp/images/bugstomp-example-output.png" alt="BugStomp Example Output">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">BugStomp</h4>
-                    <p class="card-text">Create a Whac-A-Mole style game where the player "stomps" bugs to accumulate a score.</p>
-                </div>
-            </div>
-
-            <div class="card assignment-card link" onclick='location.href = "../assignments/tron/";'>
-                <div class="card-thumbnail">
-                    <img src="../assignments/tron/images/tron-example-output.png" alt="Tron Example Output">
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Tron</h4>
-                    <p class="card-text">Create a two-player game that resembles the movie <em>Tron</em>.</p>
-                </div>
-            </div>
+            <div id="insert-cards"></div>
         </article>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src="/scripts/assignment.js"></script>
+    <script src="/scripts/component.js"></script>
+
+    <script>
+      //create navbar and titlebar
+      navbar();
+      titlebar('AP CS A Assignments');
+
+      //create assignment cards
+      coursePage(
+        [ 'emoji-builder'
+        , 'shape-collection'
+        , 'pattern-builder'
+        , 'square-fill'
+        , 'gamebasics-1'
+        , 'gamebasics-2'
+        , 'bugstomp'
+        , 'tron'
+        ]
+      );
+    </script>
 </body>
 
 </html>

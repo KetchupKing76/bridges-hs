@@ -1,14 +1,59 @@
+function navbar() {
+  //make HTML functions
+  const { nav, div, ul, li, a, img } = HTML;
+
+  //assignment links
+  const asstLinks = ul({ class : 'dropdown-menu', 'aria-labelledby' : 'navbar-dropdown' },
+    li(a({ class : 'dropdown-item', href : '/ap-cs-a/' }, 'AP Computer Science A')),
+    li(a({ class : 'dropdown-item', href : '/adv-topics/' }, 'Advanced Topics'))
+  );
+
+  //dropdown properties
+  const dropdown =
+    { class : 'nav-link dropdown-toggle'
+    , href : '#'
+    , id : 'navbar-dropdown'
+    , role : 'button'
+    , 'data-bs-toggle' : 'dropdown'
+    , 'aria-expanded' : 'false'
+    };
+
+  //navigation links
+  const links = ul({ class : 'navbar-nav'},
+    li({ class : 'nav-item' },
+      a({ class : 'nav-link', href : '/overview/' }, 'Overview')
+    ),
+    li({ class : 'nav-item dropdown' },
+      a(dropdown, 'Assignments'),
+      asstLinks
+    )
+  );
+
+  //navigation bar
+  const navbar = nav({ class : 'navbar navbar-expand navbar-custom' },
+    div({ class : 'container' },
+      a({ class : 'navbar-brand', href : '/' },
+        img({ src : '/images/logo.svg', alt : 'BRIDGES Logo' })
+      ),
+      links
+    )
+  );
+  document.querySelector('#insert-navbar').appendChild(navbar);
+}
+
+function titlebar(text) {
+  //make HTML functions
+  const { div, h1 } = HTML;
+
+  //title bar
+  const titlebar = div({ class : 'titlebar-container' },
+    h1({ class : 'title container' }, text)
+  );
+  document.querySelector('#insert-titlebar').appendChild(titlebar);
+}
+
 function assignmentPage(id) {
   const asst = assignment[id];
-
-  //go to homepage if assignment does not exist
-  if(asst === undefined) {
-    window.location = '/';
-    return;
-  }
-
-  //set page title
-  document.title = asst.name + ' | BRIDGES High School';
 
   //make HTML functions
   const { div, p, h1, h3, img, figure, figcaption, ul, li, a, strong, span } = HTML;
@@ -16,12 +61,6 @@ function assignmentPage(id) {
   //list item creation functions
   const item = text => li(text);
   const linkItem = data => li(a({ href : data.link }, data.name))
-
-  //title bar
-  const titlebar = div({ class : 'titlebar-container' },
-    h1({ class : 'title container' }, asst.name)
-  );
-  document.querySelector('#insert-titlebar').appendChild(titlebar);
 
   //description
   const description = p(asst.description);
@@ -92,4 +131,31 @@ function assignmentPage(id) {
   const docLink = name => linkItem({ link : bridgesClass[name], name });
   const documentation = ul(asst.documentation.map(docLink));
   document.querySelector('#insert-documentation').appendChild(documentation);
+}
+
+function coursePage(ids) {
+  //make HTML functions
+  const { div, p, h4, img } = HTML;
+
+  ids.forEach(id => {
+    const asst = assignment[id];
+    if(asst === undefined) return;
+
+    //assignment card
+    const card = div({ class : 'card assignment-card link' },
+      div({ class : 'card-thumbnail' },
+        img({ src : '/images/example-output/' + id + '.png', alt : asst.name + ' Example Output' })
+      ),
+      div({ class : 'card-body' },
+        h4({ class : 'card-title' }, asst.name),
+        p({ class : 'card-text' }, asst.summary)
+      )
+    );
+
+    //link to assignment page
+    card.onclick = () => {
+      window.location = '/assignment?name=' + id;
+    };
+    document.querySelector('#insert-cards').appendChild(card);
+  });
 }
