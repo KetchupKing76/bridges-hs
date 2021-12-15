@@ -388,7 +388,7 @@ function mountainPathsDescription() {
   );
 
   const diagram = (num, direction) => figure(
-    img({ src : '/images/mountain-paths/greedy-case-' + num + '.png', alt : 'Case ' + num }),
+    img({ src : '../images/mountain-paths/greedy-case-' + num + '.png', alt : 'Case ' + num }),
     figcaption('Case ' + num + ': ' + direction)
   );
 
