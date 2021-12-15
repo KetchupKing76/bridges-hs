@@ -4,8 +4,8 @@ function navbar() {
 
   //assignment links
   const asstLinks = ul({ class : 'dropdown-menu', 'aria-labelledby' : 'navbar-dropdown' },
-    li(a({ class : 'dropdown-item', href : '/ap-cs-a/' }, 'AP Computer Science A')),
-    li(a({ class : 'dropdown-item', href : '/adv-topics/' }, 'Advanced Topics'))
+    li(a({ class : 'dropdown-item', href : '../ap-cs-a/' }, 'AP Computer Science A')),
+    li(a({ class : 'dropdown-item', href : '../adv-topics/' }, 'Advanced Topics'))
   );
 
   //dropdown properties
@@ -21,7 +21,7 @@ function navbar() {
   //navigation links
   const links = ul({ class : 'navbar-nav'},
     li({ class : 'nav-item' },
-      a({ class : 'nav-link', href : '/overview/' }, 'Overview')
+      a({ class : 'nav-link', href : '../overview/' }, 'Overview')
     ),
     li({ class : 'nav-item dropdown' },
       a(dropdown, 'Assignments'),
@@ -32,8 +32,8 @@ function navbar() {
   //navigation bar
   const navbar = nav({ class : 'navbar navbar-expand navbar-custom' },
     div({ class : 'container' },
-      a({ class : 'navbar-brand', href : '/' },
-        img({ src : '/images/logo.svg', alt : 'BRIDGES Logo' })
+      a({ class : 'navbar-brand', href : '../' },
+        img({ src : '../images/logo.svg', alt : 'BRIDGES Logo' })
       ),
       links
     )
@@ -81,7 +81,7 @@ function assignmentPage(id) {
   document.querySelector('#insert-description').appendChild(description);
 
   //image and caption
-  const source = '/images/example-output/' + id + '.png'
+  const source = '../images/example-output/' + id + '.png'
   const caption = asst.imageCaption ?? asst.name + ' example output'
   const image = figure(
     img({ src : source, alt : 'Example Output' }),
@@ -158,7 +158,7 @@ function coursePage(ids) {
     //assignment card
     const card = div({ class : 'card assignment-card link' },
       div({ class : 'card-thumbnail' },
-        img({ src : '/images/example-output/' + id + '.png', alt : asst.name + ' Example Output' })
+        img({ src : '../images/example-output/' + id + '.png', alt : asst.name + ' Example Output' })
       ),
       div({ class : 'card-body' },
         h4({ class : 'card-title' }, asst.name),
@@ -168,7 +168,7 @@ function coursePage(ids) {
 
     //link to assignment page
     card.onclick = () => {
-      window.location = '/assignment?name=' + id;
+      window.location = '../assignment?name=' + id;
     };
     document.querySelector('#insert-cards').appendChild(card);
   });
