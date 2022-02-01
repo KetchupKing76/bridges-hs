@@ -18,8 +18,6 @@ article h2 {
   border-bottom-style: solid;
   border-bottom-width: thin;
   padding-bottom: .5rem;
-  /* margin-bottom: 1rem;
-  padding-top: 1rem;  */
 }
 
 h2.accordion-header {
@@ -27,7 +25,7 @@ h2.accordion-header {
   border-bottom-style: none;
 }
 
-/* Navbar styling */
+/* navbar styling */
 .navbar-custom {
   background-color: white;
 }
@@ -46,7 +44,7 @@ h2.accordion-header {
   width: 90px;
 }
 
-/* Landing page top third styling */
+/* landing page top third styling */
 .banner-bg {
   background-color: black;
   height: 35%;
@@ -78,7 +76,7 @@ h2.accordion-header {
   padding: 0px 24px;
 }
 
-/* Content styling after banner */
+/* content styling after banner */
 #slogan {
   text-align: center;
   margin: 3rem 0;
@@ -88,7 +86,7 @@ h2.accordion-header {
   text-align: center;
 }
 
-/* Card styling on landing page for courses */
+/* card styling on landing page for courses */
 .course-card {
   margin: 24px 0px;
   display: grid;
@@ -102,7 +100,7 @@ h2.accordion-header {
   margin: auto;
 }
 
-/* Asset styling for bottom of every page */
+/* asset styling for bottom of every page */
 footer {
   margin-top: 6em;
   background-color: #212121;
@@ -117,7 +115,7 @@ footer div.container hr{
   color: white;
 }
 
-/* Card styling in adv-topics and ap-cs-a */
+/* card styling in adv-topics and ap-cs-a */
 .assignment-card {
   margin: 24px 0px;
   display: grid;
@@ -136,8 +134,7 @@ footer div.container hr{
   cursor: pointer;
 }
 
-/* Assignment card tag styling */
-
+/* assignment card tag styling */
 .tag {
   border-radius: 1em;
   margin: 0em .5em;
@@ -166,7 +163,7 @@ footer div.container hr{
   background-color: #e43348;
 }
 
-/* Remaining colors for tags */
+/* remaining colors for tags */
 .tag.tag2 {
   background-color: #ffe745;
 }
@@ -182,7 +179,8 @@ footer div.container hr{
 .tag.strings {
   background-color: #ae3bff;
 }
-/* Link styling */
+
+/* link styling */
 a {
   text-decoration: none;
 }
@@ -199,15 +197,14 @@ a.btn {
   text-shadow: none;
 }
 
-/* Temporary styling for landing page and assignment tags */
-/* UPDATE THIS */
+/* temporary styling for landing page and assignment tags */
 .btn {
   border-radius: 1em;
   margin: 0em .5em;
   color: black;
 }
 
-/* Styling for titlebar used in content pages */
+/* styling for titlebar used in content pages */
 div.titlebar-container {
   padding: 0;
   background-color: #eee;
@@ -220,7 +217,7 @@ div.titlebar-container {
   padding: 24px;
 }
 
-/* Styling for special div sections */
+/* styling for special div sections */
 .note {
   background-color: #dcf4ff;
   border-left: 6px solid #024e7a;
@@ -239,10 +236,12 @@ div.titlebar-container {
   padding: 12px;
 }
 
-/* Styling for assignment description pages */
-.assignment-container {
-  display: grid;
-  grid-template-columns: 25% 75%;
+/* styling for assignment description pages */
+@media only screen and (min-width: 450px) {
+  .assignment-container {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
 }
 
 .toc header h2 {
@@ -274,21 +273,14 @@ figure {
   margin: 0em auto;
 }
 
-/* Styling of label for figures in assignment description pages */
-/* .imgLabel {
-float: left;
-position: relative;
-transform: translate(0%, 0%);
-} */
-
+/* styling of label for figures in assignment description pages */
 figcaption {
   text-align: left;
   font-size: .7em;
   margin-bottom: 16px;
 }
 
-/* Styling for mountain-paths */
-/* Styling for greedy algorithm diagram */
+/* styling for mountain paths */
 .greedy-diagram {
   display: grid;
   grid-template-columns: repeat(4, minmax(min-content, 200px));
