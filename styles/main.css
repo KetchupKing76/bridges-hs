@@ -237,7 +237,7 @@ div.titlebar-container {
 }
 
 /* styling for assignment description pages */
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 768px) {
   .assignment-container {
     display: grid;
     grid-template-columns: 25% 75%;
