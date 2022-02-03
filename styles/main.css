@@ -121,12 +121,18 @@ footer div.container hr{
   margin: 24px 0px;
   display: grid;
   grid-template-columns: 35% 65%; /* mobile only */
-  grid-template-rows: 9em;
+  grid-template-rows: 12em; /* mobile only */
 }
 
 @media only screen and (min-width: 768px) {
   .assignment-card {
     grid-template-columns: 25% 75%;
+  }
+}
+
+@media only screen and (min-width: 512px) {
+  .assignment-card {
+    grid-template-rows: 9em;
   }
 }
 
