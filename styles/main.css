@@ -41,7 +41,13 @@ h2.accordion-header {
 }
 
 .navbar-brand img {
-  width: 90px;
+  width: 70px; /* mobile only */
+}
+
+@media only screen and (min-width: 448px) {
+  .navbar-brand img {
+    width: 90px;
+  }
 }
 
 /* landing page top third styling */
