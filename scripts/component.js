@@ -3,7 +3,7 @@ function navbar() {
   const { nav, div, ul, li, a, img } = HTML;
 
   //assignment links
-  const asstLinks = ul({ class : 'dropdown-menu', 'aria-labelledby' : 'navbar-dropdown' },
+  const asstLinks = ul({ class : 'dropdown-menu dropdown-menu-end', 'aria-labelledby' : 'navbar-dropdown' },
     li(a({ class : 'dropdown-item', href : '/bridges-hs/ap-cs-a/' }, 'AP Computer Science A')),
     li(a({ class : 'dropdown-item', href : '/bridges-hs/adv-topics/' }, 'Advanced Topics'))
   );
