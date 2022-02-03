@@ -120,8 +120,14 @@ footer div.container hr{
 .assignment-card {
   margin: 24px 0px;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 35% 65%; /* mobile only */
   grid-template-rows: 9em;
+}
+
+@media only screen and (min-width: 768px) {
+  .assignment-card {
+    grid-template-columns: 25% 75%;
+  }
 }
 
 .assignment-card > .card-thumbnail > img {
