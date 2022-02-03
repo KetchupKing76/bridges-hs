@@ -260,13 +260,18 @@ div.titlebar-container {
     display: grid;
     grid-template-columns: 25% 75%;
   }
+
+  .toc {
+    position: sticky;
+    top: 20px;
+  }
 }
 
 .toc header h2 {
   font-size: 1.5rem;
 }
 
-.toc.entries {
+.toc .entries {
   list-style-type:none;
   padding-left: 0;
 }
