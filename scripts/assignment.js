@@ -347,6 +347,23 @@ const assignment =
           [ { name : 'example-output.png', link : 'https://drive.google.com/file/d/1ehWqQIj5Yqhfw4jfOkA0LojidbM87B2O/view' } ]
       , documentation : [ 'Bridges', 'SymbolCollection', 'Symbol', 'Circle', 'Rectangle', 'Polygon', 'Polyline', 'Text' ]
       }
+
+  , 'street-map' :
+      { name : 'Street Map'
+      , description : 'A graph is a mathematical object consisting of connections (edges) between points (vertices). Graphs are used fairly often in computer science, because they can model many of the networks that arise from real-world data. In this assignment, we will use a technique called Dijkstra\'s algorithm to find the shortest path across a city.'
+      , summary : 'Use Dijkstra\'s algorithm to find the shortest path across a city.'
+      , imageCaption : 'Example output for New York City; the shortest path from the northwest to the southeast in marked in red.'
+      , topics : [ 'Graphs', 'Dijkstra\'s algorithm', 'Records', 'Nested classes', 'Hash-maps and hash-sets', 'API usage' ]
+      , studentFiles :
+          [ { name : 'Street Map Student Worksheet', link : 'about:blank' } ]
+      , scaffoldFiles :
+          [ { name : 'Main.java', link : 'about:blank' }
+          , { name : 'StreetMap.java', link : 'about:blank' }
+          ]
+      , teacherFiles : [ 'Street Map Teacher Walkthrough', 'Street Map Worksheet Answer Key' ]
+      , solutionFiles : [ 'Main.java', 'StreetMap.java' ]
+      , documentation : [ 'Bridges', 'Color', 'Element', 'GraphAdjList', 'Edge', 'DataSource', 'OsmVertex', 'OsmEdge' ]
+      }
   };
 
 const bridgesClass =
@@ -360,8 +377,11 @@ const bridgesClass =
   , Color : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_color.html'
   , Element : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_element.html'
   , GraphAdjList : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_graph_adj_list.html'
+  , Edge : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_edge.html'
   , DataSource : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1connect_1_1_data_source.html'
   , EarthquakeUSGS : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1data__src__dependent_1_1_earthquake_u_s_g_s.html'
+  , OsmVertex : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1data__src__dependent_1_1_osm_vertex.html'
+  , OsmEdge : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1data__src__dependent_1_1_osm_edge.html'
   , Song : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1data__src__dependent_1_1_song.html'
   , SymbolCollection : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_symbol_collection.html'
   , Symbol : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_symbol.html'
