@@ -355,10 +355,10 @@ const assignment =
       , imageCaption : 'Example output for New York City; the shortest path from the northwest to the southeast in marked in red.'
       , topics : [ 'Graphs', 'Dijkstra\'s algorithm', 'Records', 'Nested classes', 'Hash-maps and hash-sets', 'API usage' ]
       , studentFiles :
-          [ { name : 'Street Map Student Worksheet', link : 'about:blank' } ]
+          [ { name : 'Street Map Student Worksheet', link : 'https://docs.google.com/document/d/1v_35mixjUBAOym_KqmJKEcSgFSByhkHhZF-pYWjg52w/view' } ]
       , scaffoldFiles :
-          [ { name : 'Main.java', link : 'about:blank' }
-          , { name : 'StreetMap.java', link : 'about:blank' }
+          [ { name : 'Main.java', link : 'https://drive.google.com/file/d/1ecuC6u9K682KEvRnCd0rqF2ws_PqEWJL/view' }
+          , { name : 'StreetMap.java', link : 'https://drive.google.com/file/d/16wtzboVzDxKv5cDpccyA_J5GRhEuBhJv/view' }
           ]
       , teacherFiles : [ 'Street Map Teacher Walkthrough', 'Street Map Worksheet Answer Key' ]
       , solutionFiles : [ 'Main.java', 'StreetMap.java' ]
