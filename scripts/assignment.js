@@ -15,7 +15,7 @@
 
   teacherFiles (optional)    -- teacher file names
   solutionFiles (optional)   -- soltion file names
-  otherResources (optional)  -- additional resources names and urls
+  otherResources (optional)  -- additional resource names and urls
 
   documentation              -- names of BRIDGES classes
                                 (must be bridgesClass object keys)
@@ -212,30 +212,6 @@ const assignment =
       , documentation : [ 'GameBase', 'NonBlockingGame', 'NamedColor' ]
       }
 
-  , 'sudoku' :
-      { name : 'Sudoku'
-      , description : 'Using the BRIDGES NonBlockingGame class, students create a game where players can solve sudoku puzzles.'
-      , summary : 'Create a program for solving sudoku puzzles.'
-      , topics : [ 'Nested loops', '2D arrays', 'Conditionals', 'API usage' ]
-      , outcomes :
-          [ { verb : 'Apply', outcome : 'Use API documentation to figure out how to use Java library classes.' }
-          , { verb : 'Apply', outcome : 'Use understanding of rows and columns while creating algorithms for nested iteration. (AP CS A Unit 4, CON-2.C, CON-2.E, CON-2.G)' }
-          , { verb : 'Apply', outcome : 'Represent branching logical processes with complex conditional statements. (AP CS A Unit 3, CON-2.C)' }
-          , { verb : 'Apply', outcome : 'Demonstrate perseverance while using APIs and other resources to independently develop programming skills.' }
-          , { verb : 'Understand', outcome : 'Describe how parallel arrays can be used to keep track of changing object properties.' }
-          , { verb : 'Create', outcome : 'Apply the above cognitive skills with 2D data structure to develop original solutions and conduct requirements testing.' }
-          ]
-      , studentFiles :
-          [ { name : 'Sudoku Student Worksheet', link : 'https://docs.google.com/document/d/1MHWUL7-kknUB2tD0W-fykQceUFlWlG1q-HSSh2HrlMk/view' } ]
-      , scaffoldFiles :
-          [ { name : 'Sudoku.java', link : 'https://drive.google.com/file/d/1WuUZ7xR-rXnpBhh7gL8pjcTozdC6IjKh/view' }
-          , { name : 'GridGenerator.java', link : 'https://drive.google.com/file/d/1DBA55psMPPtOMsyr-A64-mGvfudYXdV5/view' }
-          ]
-      , teacherFiles : [ 'Sudoku Teacher Walkthrough', 'Sudoku Worksheet Answer Key' ]
-      , solutionFiles : [ 'Sudoku.java', 'GridGenerator.java' ]
-      , documentation : [ 'GameBase', 'NonBlockingGame', 'NamedColor', 'NamedSymbol' ]
-      }
-
   , 'patterns-in-song-lyrics' :
       { name : 'Patterns in Song Lyrics'
       , description : 'In this project, students access song lyrics using BRIDGES and check for repetition. They display the repetition with the ColorGrid class, creating patterns like the following:'
@@ -363,6 +339,34 @@ const assignment =
       , teacherFiles : [ 'Street Map Teacher Walkthrough', 'Street Map Worksheet Answer Key' ]
       , solutionFiles : [ 'Main.java', 'StreetMap.java' ]
       , documentation : [ 'Bridges', 'Color', 'Element', 'GraphAdjList', 'Edge', 'DataSource', 'OsmVertex', 'OsmEdge' ]
+      }
+
+  , 'sudoku' :
+      { name : 'Sudoku'
+      , description : 'Sudoku is a puzzle game played on a 9 by 9 grid. The objective is to fill the grid with numbers such that each row, column, and 3 by 3 subgrid contains every number from 1 to 9. The game starts with the grid partially completed so that there is only a single solution. In this project, you will create your own sudoku game using the BRIDGES Java API.'
+      , summary : 'Create a program for solving sudoku puzzles.'
+      , topics : [ 'Nested loops', '2D arrays', 'Booleans and conditionals', 'Reading source code', 'API usage' ]
+      , outcomes :
+          [ { verb : 'Apply', outcome : 'Use an API reference in order to learn how to use Java classes.' }
+          , { verb : 'Apply', outcome : 'Use understanding of 2D arrays, rows, and columns while creating algorithms for nested iteration. (AP CS A Unit 4, CON-2.C, CON-2.E, CON-2.G)' }
+          , { verb : 'Apply', outcome : 'Represent branching logical processes through development of complex conditionals. (AP CS A Unit 3, CON-2.C)' }
+          , { verb : 'Apply', outcome : 'Demonstrate perseverance while using APIs and other resources when independently developing programming skills.' }
+          , { verb : 'Understand', outcome : 'Describe how parallel arrays can be used to keep track of changing properties.' }
+          , { verb : 'Create', outcome : 'Apply the above cognitive skills with 2D data structures when developing original solutions and conducting requirements testing.' }
+          ]
+      , studentFiles :
+          [ { name : 'Sudoku Student Worksheet', link : 'https://docs.google.com/document/d/1C3r20XU2EYtZYHL_yCqFebuMVGoPs9XjKGDTcYVsG0w/view' } ]
+      , scaffoldFiles :
+          [ { name : 'Sudoku.java', link : 'https://drive.google.com/file/d/1-FR6cNZdUok_qG5xcvgCdckM_LsgkSz_/view' }
+          , { name : 'GridGenerator.java', link : 'https://drive.google.com/file/d/1jpxIsDvyEqUlTTDAemLvKrxA0LZCl6Uy/view' }
+          ]
+      , teacherFiles : [ 'Sudoku Teacher Walkthrough', 'Sudoku Worksheet Answer Key' ]
+      , solutionFiles : [ 'Sudoku.java', 'GridGenerator.java' ]
+      , otherResources :
+          [ { name : 'Game.java', link : 'https://drive.google.com/file/d/1ZduvXJgicqj-0t1N-0121971nNE3ziTA/view' }
+          , { name : 'Keyboard.java', link : 'https://drive.google.com/file/d/1aE48jraDCgoV-ArYbGXyMv6D0Y8r9vRv/view' }
+          ]
+      , documentation : [ 'NamedColor', 'NamedSymbol' ]
       }
   };
 
