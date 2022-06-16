@@ -1,0 +1,26 @@
+---
+layout: 'default'
+title: 'Assignments'
+redirect_from:
+  - /adv-topics/
+  - /ap-cs-a/
+  - /assignment/
+---
+
+<main class="container">
+  <article class="repository">
+    {% for asst in site.data.assignments %}
+      <div class="card assignment-card link"
+           onclick="window.location='{% link assignments/{{ asst.key }}/index.html %}'">
+        <div class="card-thumbnail">
+          <img src="{% link assets/images/example-output/{{ asst.key }}.png %}"
+               alt="{{ asst.name }} Example Output">
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">{{ asst.name }}</h4>
+          <p class="card-text">{{ asst.summary }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </article>
+</main>
