@@ -105,7 +105,7 @@
     - { name: 'GameBasics I Scaffold', link: 'https://docs.google.com/document/d/12IwOhLCPeh-HKLuBa5_YOdQOIx3ynKHFocXl0JwyRsQ/view' }
     - { name: 'GameBasics1.java', link: 'https://drive.google.com/file/d/1ehoM_yAnQWs_X1GOq3OIgeHzvzA8gou6/view' }
   teacher_files: [ 'GameBasics I Teacher Walkthrough' ]
-  solutionFiles: [ 'GameBasics1.java' ]
+  solution_files: [ 'GameBasics1.java' ]
   documentation: [ 'NonBlockingGame', 'GameBase', 'NamedColor', 'NamedSymbol' ]
 
 
