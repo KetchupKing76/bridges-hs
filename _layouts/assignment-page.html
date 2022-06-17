@@ -1,0 +1,110 @@
+---
+layout: 'default'
+---
+
+<main class="container assignment-container">
+  <!-- Table of contents -->
+  <section>
+    <div class="toc">
+      <header><h2>Table of contents</h2></header>
+      <ul class="entries">
+        <li><a href="#description">Description</a></li>
+        <li><a href="#topics">Topics</a></li>
+        {% if page.outcomes %}
+          <li><a href="#intended-learning-outcomes">Intended learning outcomes</a></li>
+        {% endif %}
+        <li><a href="#instructional-materials">Instructional materials</a></li>
+        <li><a href="#documentation">Documentation</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <article class="assignment">
+    <h2 id="description">Description</h2>
+    <p>{{ page.description }}</p>
+    <figure>
+      <img src="{% link assets/images/example-output/{{ page.key }}.png %}" alt="Example output">
+      <figcaption>
+        {% if page.image_caption %}
+          {{ page.image_caption }}
+        {% else %}
+          {{ page.title }} example output
+        {% endif %}
+      </figcaption>
+    </figure>
+
+    <h2 id="topics">Topics</h2>
+    <ul>
+      {% for topic in page.topics %}
+        <li>{{ topic }}</li>
+      {% endfor %}
+    </ul>
+
+    {% if page.outcomes %}
+    <h2 id="intended-learning-outcomes">Intended learning outcomes</h2>
+      <ul>
+        {% for item in page.outcomes %}
+          <li><strong>{{ item.verb }}:</strong> {{ item.outcome }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <h2 id="instructional-materials">Instructional materials</h2>
+    <div class="warning">
+      <p>
+        <strong>BRIDGES instructors:</strong>
+        To access teacher files or solution files, use the Bridges_Users Shared Drive.
+        If you do not already have access, please contact <a href="mailto: iuse-bridges-group@uncc.edu">iuse-bridges-group@uncc.edu</a>.
+      </p>
+    </div>
+
+    <h3>Student</h3>
+    <ul>
+      {% for file in page.student_files %}
+        <li><a href="{{ file.link }}">{{ file.name }}</a></li>
+      {% endfor %}
+    </ul>
+
+    {% if page.teacher_files %}
+      <h3>Teacher</h3>
+      <ul>
+        {% for file in page.teacher_files %}
+          <li>{{ file }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <h3>Resources</h3>
+    <ul>
+      {% for file in page.other_resources %}
+        <li><a href="{{ file.link }}">{{ file.name }}</a></li>
+      {% endfor %}
+      <li>
+        Scaffold files
+        <ul>
+          {% for file in page.scaffold_files %}
+            <li><a href="{{ file.link }}">{{ file.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% if page.solution_files %}
+        <li>
+          Solution files
+          <ul>
+            {% for file in page.solution_files %}
+              <li>{{ file }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endif %}
+    </ul>
+
+    <h2 id="documentation">Documentation</h2>
+    <ul>
+      {% for class in page.documentation %}
+        <li><a href="{{ site.data.bridges_links[class] }}">{{ class }}</a></li>
+      {% endfor %}
+    </ul>
+  </article>
+</main>

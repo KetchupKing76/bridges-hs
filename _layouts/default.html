@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon Package -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% link assets/images/favicon-package/apple-touch-icon.png %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% link assets/images/favicon-package/favicon-32x32.png %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% link assets/images/favicon-package/favicon-16x16.png %}">
+  <link rel="manifest" href="{% link assets/images/favicon-package/site.webmanifest %}">
+  <link rel="mask-icon" href="{% link assets/images/favicon-package/safari-pinned-tab.svg %}" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="{% link assets/main.css %}" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} | BRIDGES High School
+    {% else %}
+      BRIDGES High School
+    {% endif %}
+  </title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="{% link index.html %}">
+        <img src="{% link assets/images/logo.svg %}" alt="BRIDGES Logo">
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="{% link overview/index.html %}">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% link assignments/index.html %}">Assignments</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Title Bar -->
+  {% if page.title %}
+    <div class="titlebar-container">
+      <h1 class="title container">{{ page.title }}</h1>
+    </div>
+  {% endif %}
+
+  {{ content }}
+
+  <!-- Copyright footer -->
+  <footer>
+    <div class="container">
+      <hr>
+      <p>All rights reserved, Copyright @2018,2019,2020. The University of North Carolina at Charlotte.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

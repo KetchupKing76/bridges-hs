@@ -1,0 +1,11 @@
+plugins:
+  - 'jekyll-datapage-generator'
+  - 'jekyll-redirect-from'
+
+page_gen:
+  - data: 'assignments'
+    template: 'assignment-page'
+    dir: 'assignments'
+    name: 'key'
+    index_files: 'true'
+    title: 'title'
