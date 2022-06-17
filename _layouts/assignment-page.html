@@ -27,9 +27,9 @@ layout: 'default'
       <img src="{% link assets/images/example-output/{{ page.key }}.png %}" alt="Example output">
       <figcaption>
         {% if page.image_caption %}
-          page.image_caption
+          {{ page.image_caption }}
         {% else %}
-          {{ page.name }} example output
+          {{ page.title }} example output
         {% endif %}
       </figcaption>
     </figure>

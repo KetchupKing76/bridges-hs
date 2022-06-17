@@ -8,4 +8,4 @@ page_gen:
     dir: 'assignments'
     name: 'key'
     index_files: 'true'
-    title: 'name'
+    title: 'title'

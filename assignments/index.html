@@ -14,10 +14,10 @@ redirect_from:
            onclick="window.location='{% link assignments/{{ asst.key }}/index.html %}'">
         <div class="card-thumbnail">
           <img src="{% link assets/images/example-output/{{ asst.key }}.png %}"
-               alt="{{ asst.name }} Example Output">
+               alt="{{ asst.title }} Example Output">
         </div>
         <div class="card-body">
-          <h4 class="card-title">{{ asst.name }}</h4>
+          <h4 class="card-title">{{ asst.title }}</h4>
           <p class="card-text">{{ asst.summary }}</p>
         </div>
       </div>
