@@ -1,6 +1,9 @@
 plugins:
   - 'jekyll-datapage-generator'
   - 'jekyll-redirect-from'
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 page_gen:
   - data: 'assignments'
