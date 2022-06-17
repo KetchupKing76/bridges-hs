@@ -30,8 +30,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
     jekyll-datapage-generator (1.4.0)
-    jekyll-feed (0.16.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-redirect-from (0.16.0)
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (2.2.0)
@@ -73,7 +71,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-datapage-generator
-  jekyll-feed
   jekyll-redirect-from
   jekyll-seo-tag
   jekyll-sitemap
