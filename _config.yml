@@ -1,3 +1,5 @@
+baseurl: '/bridges-hs'
+
 plugins:
   - 'jekyll-datapage-generator'
   - 'jekyll-redirect-from'
