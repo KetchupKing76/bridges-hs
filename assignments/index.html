@@ -1,6 +1,6 @@
 ---
 layout: 'default'
-title: 'Assignments'
+title: 'Projects'
 redirect_from:
   - /adv-topics/
   - /ap-cs-a/
@@ -19,6 +19,9 @@ redirect_from:
         <div class="card-body">
           <h4 class="card-title">{{ asst.title }}</h4>
           <p class="card-text">{{ asst.summary }}</p>
+          {% for tag in asst.tags %}
+            <small class="tag">{{ tag }}</small>
+          {% endfor %}
         </div>
       </div>
     {% endfor %}

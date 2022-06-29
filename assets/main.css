@@ -155,48 +155,10 @@ footer div.container hr{
 
 /* assignment card tag styling */
 .tag {
+  padding: 2px 8px;
   border-radius: 1em;
-  margin: 0em .5em;
-  color: black;
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-}
-
-.tag.arrays-2d {
-  background-color: #00734b;
-}
-
-.tag.loops {
-  background-color: #3befff;
-}
-
-.tag.data-structures {
-  background-color: #ffc141;
-}
-
-.tag.game {
-  background-color: #e43348;
-}
-
-/* remaining colors for tags */
-.tag.tag2 {
-  background-color: #ffe745;
-}
-
-.tag.tag3 {
-  background-color: #0557ff;
-}
-
-.tag.tag4 {
-  background-color: #3b44ff;
-}
-
-.tag.strings {
-  background-color: #ae3bff;
+  border: 1px solid #cdd5d7;
+  background-color: #eee;;
 }
 
 /* link styling */

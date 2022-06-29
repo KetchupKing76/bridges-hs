@@ -1,6 +1,7 @@
 # key
 # title
 # summary
+# tags
 # description
 # image_caption (optional)
 # topics
@@ -16,6 +17,7 @@
 - key: 'emoji-builder'
   title: 'Emoji Builder'
   summary: 'Create a custom emoji using the NonBlockingGame class.'
+  tags: [ '2d grid', 'image creation' ]
   description: 'Students use their undertanding of 2D arrays to create an emoji using the BRIDGES NonBlockingGame class. This project is indended to build student comfort with BRIDGES, so it is ungraded and there is no rubric.'
   topics: [ '2D arrays', 'Row-major order', 'Using API documentation' ]
   outcomes:
@@ -33,6 +35,7 @@
 - key: 'shape-collection'
   title: 'Shape Collection'
   summary: 'Draw circles, rectangles, polygons, and text.'
+  tags: [ 'shapes', 'image creation', 'object creation', 'arraylist' ]
   description: 'Create circles, rectangles, and polygons with the Bridges SymbolCollection class.'
   topics: [ 'Reading source code', 'API usage', 'Creating objects' ]
   student_files:
@@ -46,6 +49,7 @@
 - key: 'pattern-builder'
   title: 'Pattern Builder'
   summary: 'Create colorful rectangular patterns with the ColorGrid Class.'
+  tags: [ '2d grid', 'image creation' ]
   description: 'Using the BRIDGES ColorGrid class, students solve seven pattern-creation challenges by applying knowledge of conditionals, nested loops, and 2D array traversal.'
   topics: [ 'Nested loops', '2D arrays', 'Conditionals' ]
   outcomes:
