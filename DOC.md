@@ -49,6 +49,8 @@ Each entry in assignments.yaml has the following attributes:
 ## Running Locally
 
 Install Ruby along with the `jekyll` and `bundler` gems. See these pages for more detailed instructions:
+
 * [Quickstart](https://jekyllrb.com/docs/)
 * [Installation](https://jekyllrb.com/docs/installation/)
+
 Run `bundle exec jekyll serve` to view this site on a localhost server. The server will automatically update whenever you edit the files.
