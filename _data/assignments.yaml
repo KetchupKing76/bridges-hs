@@ -1,3 +1,5 @@
+# TAGS: game, 2d grid, vector graphics, real world data, parsing, path finding, linked list
+
 - key: 'emoji-builder'
   title: 'Emoji Builder'
   summary: 'Create a custom emoji using the NonBlockingGame class.'
@@ -188,7 +190,7 @@
 - key: 'sudoku'
   title: 'Sudoku'
   summary: 'Create a program for solving sudoku puzzles.'
-  tags: [ 'game' ]
+  tags: [ 'game', '2d grid' ]
   description: 'Sudoku is a puzzle game played on a 9 by 9 grid. The objective is to fill the grid with numbers such that each row, column, and 3 by 3 subgrid contains every number from 1 to 9. The game starts with the grid partially completed so that there is only a single solution. In this project, you will create your own sudoku game using the BRIDGES Java API.'
   topics: [ 'Nested loops', '2D arrays', 'Booleans and conditionals', 'Reading source code', 'API usage' ]
   outcomes:
