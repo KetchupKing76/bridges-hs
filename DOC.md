@@ -1,6 +1,4 @@
-# Documentation
-
-## File structure
+## Files
 
 * *_data/assignments.yaml:* Data for each project (see [Project Structure](Project-Structure)).
 
@@ -34,5 +32,3 @@ Each entry in assignments.yaml has the following attributes:
 * *solution_files (optional)*
 * *other_resources (optional):* A list of resource files, each with a name and a link. This could include images, explanatory documents, etc.
 * *documentation:* A list of BRIDGES classes used by the project. These classes must have entires in bridges_links.yaml or else the links will not work.
-
-<!-- ## Running jekyll -->
