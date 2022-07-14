@@ -18,9 +18,9 @@
 
 Each entry in assignments.yaml has the following attributes:
 
-* `key`: The name of the project in lowercase, with words separated by hyphens (e.g. 'emoji-builder').
+* `key`: The name of the project in lowercase, with words separated by hyphens (e.g. "emoji-builder").
 
-* `title`: The name of the project in title case, with words separated by spaces (e.g. 'Emoji Builder').
+* `title`: The name of the project in title case, with words separated by spaces (e.g. "Emoji Builder").
 
 * `summary`: A short description which appears in the link on the "projects" page.
 
