@@ -45,3 +45,10 @@ Each entry in assignments.yaml has the following attributes:
 * *other_resources (optional):* A list of resource files, each with a name and a link. This could include images, explanatory documents, etc.
 
 * *documentation:* A list of BRIDGES classes used by the project. These classes must have entires in bridges_links.yaml or else the links will not work.
+
+## Running Locally
+
+Install Ruby along with the `jekyll` and `bundler` gems. See these pages for more detailed instructions:
+* [Quickstart](https://jekyllrb.com/docs/)
+* [Installation](https://jekyllrb.com/docs/installation/)
+Run `bundle exec jekyll serve` to view this site on a localhost server. The server will automatically update whenever you edit the files.
