@@ -32,7 +32,7 @@ Each entry in assignments.yaml has the following attributes:
 
 * `topics`: A list of programming topics that the project covers.
 
-* `outcomes` (optional): A list of intended learning outcomes. Each entry is an object with a 'verb' field and an 'outcome' field.
+* `outcomes` (optional): A list of intended learning outcomes. Each entry is an object with a `verb` field and an `outcome` field.
 
 * `student_files`: A list of student files, each with a name and a link.
 
