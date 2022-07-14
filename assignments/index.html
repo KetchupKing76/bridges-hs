@@ -9,9 +9,11 @@ redirect_from:
 
 <main class="container">
   <article class="repository">
+    <input id="search" placeholder="Filter">
     {% for asst in site.data.assignments %}
       <div class="card assignment-card link"
-           onclick="window.location='{% link assignments/{{ asst.key }}/index.html %}'">
+           onclick="window.location='{% link assignments/{{ asst.key }}/index.html %}'"
+           id="{{ asst.key }}">
         <div class="card-thumbnail">
           <img src="{% link assets/images/example-output/{{ asst.key }}.png %}"
                alt="{{ asst.title }} Example Output">
@@ -27,3 +29,5 @@ redirect_from:
     {% endfor %}
   </article>
 </main>
+
+<script src="search.js"></script>

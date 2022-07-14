@@ -161,6 +161,11 @@ footer div.container hr{
   background-color: #eee;;
 }
 
+#search {
+  margin-top: 24px;
+  width: 100%;
+}
+
 /* link styling */
 a {
   text-decoration: none;
