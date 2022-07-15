@@ -1,5 +1,21 @@
 # TAGS: game, 2d grid, vector graphics, real world data, parsing, path finding, linked list
 
+- key: 'aquarium'
+  title: 'Aquarium'
+  summary: 'Learn about arrays of objects by creating an aquarium.'
+  tags: [ ]
+  description: 'Arrays in Java are data structures that hold multiple objects in one memory location. They can hold a fixed number of one type of object or variable, but that object can be almost anything. In this project, we will practice manipulating arrays and accessing elements using methods from the Array class. You are the owner of an aquarium with a fixed number of tanks, you also happen to be a little indecisive and like to change which fish go in what tanks. Think of the aquarium as an array, each tank represents an index, and the fish are the objects.'
+  topics: [ 'Arrays', 'Classes', 'Loops', 'Booleans and conditionals', 'NonBlockingGame class' ]
+  student_files:
+    - { name: 'Aquarium Student Worksheet', link: 'https://docs.google.com/document/d/1ii0hhRizk_y2dy27XGOZLsq1mH50ZJfr3PlsT_HImqg/view' }
+  scaffold_files:
+    - { name: 'Aquarium.java', link: 'https://drive.google.com/file/d/19pWskDw9OZyKOtsXdTT6qneN0W6d6Iz8/view' }
+    - { name: 'Fish.java', link: 'https://drive.google.com/file/d/17_lRiHjN6xzn75YOKsLNHkGz-SSSejXl/view' }
+    - { name: 'Tester.java', link: 'https://drive.google.com/file/d/1NgdVxtE0_yAtsf6vl4kzoAyQ0kMjKMwk/view' }
+  teacher_files: [ 'Aquarium Teacher Walkthrough' ]
+  solution_files: [ 'Aquarium.java', 'Fish.java', 'Tester.java' ]
+  documentation: [ 'NonBlockingGame', 'NamedColor', 'NamedSymbol' ]
+
 - key: 'emoji-builder'
   title: 'Emoji Builder'
   summary: 'Create a custom emoji using the NonBlockingGame class.'
