@@ -187,6 +187,23 @@
   documentation: [ 'NonBlockingGame', 'GameBase', 'NamedColor' ]
 
 
+- key: 'monster-adventure'
+  title: 'Monster Adventure'
+  summary: 'Player collects fruit while avoiding the monster.'
+  tags: [ 'game', '2d grid' ]
+  description: 'Monster Adventure is a type of collecting and avoiding game, where the player will be collecting fruits from the map and avoiding the monster, which will follow the player. The player will use the arrow keys to control the character‘s moves around the map. The score will increase until the player eventually wins.'
+  topics: [ 'Methods', 'Classes', 'Loops', 'Booleans and conditionals', 'NonBlockingGame class', '2d arrays' ]
+  student_files:
+    - { name: 'Monster Adventure Student Worksheet', link: 'https://docs.google.com/document/d/15GFjiNJkStH75jWFCgdp_sd8qt8ORhPdWcYU-IgBf3w/edit' }
+  scaffold_files:
+    - { name: 'GameRunner.java', link: 'https://drive.google.com/file/d/1GvFeO5D8EFFIJppreS_EwwMDWd-8KHby/view' }
+    - { name: 'Monster.java', link: 'https://drive.google.com/file/d/1HqiqBiiee8iD3rj6Vta_87SS_2E0Mrsa/view' }
+    - { name: 'Map.java', link: 'https://drive.google.com/file/d/1JuCSzitpu0FAjj6cehbyP3qeMyW4kK_c/view' }
+  teacher_files: [ 'Monster Adventure Teacher Walkthrough' ]
+  solution_files: [ 'GameRunner.java', 'Monster.java', 'Map.java']
+  documentation: [ 'NonBlockingGame', 'GameBase', 'NamedColor', 'NamedSymbol']
+
+
 - key: 'chaos-game'
   title: 'Chaos Game'
   summary: 'Create fractal designs using a chaos game algorithm.'
