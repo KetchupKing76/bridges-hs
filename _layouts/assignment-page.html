@@ -42,7 +42,7 @@ layout: 'default'
     </ul>
 
     {% if page.outcomes %}
-    <h2 id="intended-learning-outcomes">Intended learning outcomes</h2>
+      <h2 id="intended-learning-outcomes">Intended learning outcomes</h2>
       <ul>
         {% for item in page.outcomes %}
           <li><strong>{{ item.verb }}:</strong> {{ item.outcome }}</li>
@@ -59,51 +59,56 @@ layout: 'default'
       </p>
     </div>
 
-    <h3>Student</h3>
-    <ul>
-      {% for file in page.student_files %}
-        <li><a href="{{ file.link }}">{{ file.name }}</a></li>
-      {% endfor %}
-    </ul>
-
-    {% if page.teacher_files %}
-      <h3>Teacher</h3>
+    <h4>Student files</h4>
+    {% if page.java %}
+      {% if page.python %} Java {% endif %}
       <ul>
-        {% for file in page.teacher_files %}
+        {% for file in page.java.student_files %}
+          <li><a href="{{ file.link }}">{{ file.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if page.python %}
+      {% if page.java %} Python {% endif %}
+      <ul>
+        {% for file in page.python.student_files %}
+          <li><a href="{{ file.link }}">{{ file.name }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <h4>Teacher files</h4>
+    {% if page.java %}
+      {% if page.python %} Java {% endif %}
+      <ul>
+        {% for file in page.java.teacher_files %}
           <li>{{ file }}</li>
         {% endfor %}
       </ul>
     {% endif %}
 
-    <h3>Resources</h3>
-    <ul>
-      {% for file in page.other_resources %}
-        <li><a href="{{ file.link }}">{{ file.name }}</a></li>
-      {% endfor %}
-      <li>
-        Scaffold files
-        <ul>
-          {% for file in page.scaffold_files %}
-            <li><a href="{{ file.link }}">{{ file.name }}</a></li>
-          {% endfor %}
-        </ul>
-      </li>
-      {% if page.solution_files %}
-        <li>
-          Solution files
-          <ul>
-            {% for file in page.solution_files %}
-              <li>{{ file }}</li>
-            {% endfor %}
-          </ul>
-        </li>
-      {% endif %}
-    </ul>
+    {% if page.python %}
+      {% if page.java %} Python {% endif %}
+      <ul>
+        {% for file in page.python.teacher_files %}
+          <li>{{ file }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
 
     <h2 id="documentation">Documentation</h2>
     <ul>
       {% for class in page.documentation %}
-        <li><a href="{{ site.data.bridges_links[class] }}">{{ class }}</a></li>
+        <li>
+          {{ class }}
+          {% if page.java %}
+            <a href="{{ site.data.java_links[class] }}">[Java]</a>
+          {% endif %}
+          {% if page.python %}
+            <a href="{{ site.data.python_links[class] }}">[Python]</a>
+          {% endif %}
+        </li>
       {% endfor %}
     </ul>
   </article>
