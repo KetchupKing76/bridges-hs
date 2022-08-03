@@ -21,6 +21,12 @@ redirect_from:
         <div class="card-body">
           <h4 class="card-title">{{ asst.title }}</h4>
           <p class="card-text">{{ asst.summary }}</p>
+          {% if asst.java %}
+            <small class="language-tag">Java</small>
+          {% endif %}
+          {% if asst.python %}
+            <small class="language-tag">Python</small>
+          {% endif %}
           {% for tag in asst.tags %}
             <small class="tag">{{ tag }}</small>
           {% endfor %}

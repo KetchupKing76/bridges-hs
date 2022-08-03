@@ -5,6 +5,8 @@ const searchData = {
   {% for asst in site.data.assignments %}
   "{{ asst.key }}" : `
     {{ asst.title }} {{ asst.summary }} {{ asst.description }}
+    {% if asst.java %} java {% endif %}
+    {% if asst.python %} python {% endif %}
     {% for tag in asst.tags %} {{ tag }} {% endfor %}
     {% for topic in asst.topics %} {{ topic }} {% endfor %}
     {% for class in asst.documentation %} {{ class }} {% endfor %}

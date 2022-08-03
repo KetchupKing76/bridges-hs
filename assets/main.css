@@ -158,7 +158,14 @@ footer div.container hr{
   padding: 2px 8px;
   border-radius: 1em;
   border: 1px solid #cdd5d7;
-  background-color: #eee;;
+  background-color: #eee;
+}
+
+.language-tag {
+  padding: 2px 8px;
+  border-radius: 1em;
+  border: 1px solid #cdd5d7;
+  background-color: #d4e0f7;
 }
 
 #search {
