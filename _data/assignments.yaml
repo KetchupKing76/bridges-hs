@@ -38,7 +38,7 @@
   title: 'Shape Collection'
   summary: 'Draw circles, rectangles, polygons, and text.'
   tags: [ 'vector graphics' ]
-  description: 'Create circles, rectangles, and polygons with the Bridges SymbolCollection class.'
+  description: 'Draw circles, rectangles, polygons, and text with the Bridges SymbolCollection class.'
   topics: [ 'Reading source code', 'API usage', 'Creating objects' ]
   student_files:
     - { name: 'Shape Collection Student Worksheet', link: 'https://docs.google.com/document/d/13HFtOq54klYDPdpFiMNSxq8r1ct2eW27ii68tzgKzik/view' }
