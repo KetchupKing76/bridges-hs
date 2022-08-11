@@ -266,10 +266,12 @@
   java:
     student_files:
       - { name: 'Patterns in Song Lyrics Student Worksheet', link: 'https://docs.google.com/document/d/1qEoQG77AXxfklH6h-eszEI7K-XlJXhn65qO_ElxzsnQ/view' }
-      - { name: 'splitLyrics Activity', link: 'https://docs.google.com/document/d/1IUiJWprytdAeOBqLBeNfPPnhL3V8z3_7A7SIJhP1Ltk/view' }
-      - { name: 'ColorGrid Activity', link: 'https://docs.google.com/document/d/1tb2bnOajRPxTc6rSGZ7RulbujJi_836oWj8jD9bs4fE/view' }
       - { name: 'GridLyrics.java', link: 'https://drive.google.com/file/d/1GApUO0YU1Uh5QEXjxmEUMlAvEBjC6DlR/view' }
     teacher_files:  [ 'Patterns in Song Lyrics Worksheet Answer Key', 'GridLyrics.java' ]
+  python:
+    student_files:
+      - { name: 'Patterns in Song Lyrics Student Worksheet', link: 'https://docs.google.com/document/d/1PVm_5N6C5a7RyDaVGsUAnKlKgyAGa1YOBgynFOfZjrM/view' }
+      - { name: 'GridLyrics.py', link: 'https://drive.google.com/file/d/1TeqVoZ3mgvkz-koTelCVCP_UJxadV_6l/view' }
   documentation: [ 'Bridges', 'DataSource', 'Color', 'ColorGrid', 'Song' ]
 
 
