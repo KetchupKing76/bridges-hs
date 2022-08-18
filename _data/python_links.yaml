@@ -10,3 +10,6 @@ ColorGrid : 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridg
 DataSource : 'http://bridgesuncc.github.io/doc/python-api/current/html/namespacebridges_1_1data__src__dependent_1_1data__source.html'
 Color : 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1color_1_1_color.html'
 Song : 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1data__src__dependent_1_1song_1_1_song.html'
+Element: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1element_1_1_element.html'
+EarthquakeUSGS: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1data__src__dependent_1_1earthquake__usgs_1_1_earthquake_u_s_g_s.html'
+SLelement: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1sl__element_1_1_s_lelement.html'

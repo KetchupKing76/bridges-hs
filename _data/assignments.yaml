@@ -323,7 +323,12 @@
       - { name: 'Earthquake Linked List Student Worksheet', link: 'https://docs.google.com/document/d/1oisYJbWIy8T-rqHunXDbAe6XMY1uhh3UHyk6y5HLZCo/view' }
       - { name: 'EarthquakeList.java', link: 'https://drive.google.com/file/d/1aREWCQ2E-K745UYz5dowP2wY74RakH_L/view' }
     teacher_files: [ 'Earthquake Linked List Worksheet Answer Key', 'EarthquakeList.java' ]
-  documentation: [ 'Bridges', 'Element', 'EarthquakeUSGS' ]
+  python:
+    student_files:
+      - { name: 'Earthquake Linked List Student Worksheet', link: 'https://docs.google.com/document/d/1_1YAMXZe2O2VIpjBAOH3jnphvI1iCKJka9YhtC6B0jQ/view' }
+      - { name: 'earthquake_list.py', link: 'https://drive.google.com/file/d/19Z25jyqpl-EAy_ziIGl5JyG2t3pKc1r2/view' }
+    teacher_files: [ 'Earthquake Linked List Worksheet Answer Key', 'EarthquakeList.java' ]
+  documentation: [ 'Bridges', 'Element', 'EarthquakeUSGS', 'SLelement' ]
 
 
 - key: 'maze-generator'
