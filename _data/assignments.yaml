@@ -169,7 +169,12 @@
     student_files:
       - { name: 'Rainbow Snake Student Worksheet', link: 'https://docs.google.com/document/d/1UkCBdZs4MCLxKoQ4erhtW4c8DMG7XdZmoIjgfg4qgp4/view' }
       - { name: 'SnakeGame.java', link: 'https://drive.google.com/file/d/1EepVuCnYqDipVPwcO3ZjjIT08gVN7X2L/view' }
-    teacher_files: [ 'SnakeGame.java' ]
+    teacher_files: [ 'Rainbow Snake Teacher Walkthrough', 'SnakeGame.java' ]
+  python:
+    student_files:
+      - { name: 'Snake Student Worksheet', link: 'https://docs.google.com/document/d/1E6ZeOkuITrk56RX1Rr8IFmf1P50ZLEIp7bEE4EYIA6U/view' }
+      - { name: 'snake_game.py', link: 'https://drive.google.com/file/d/1gPZTeUL-9V8xlEQbAfMYtLq9X-yYW3o6/view' }
+    teacher_files: [ 'snake_game.py' ]
   documentation: [ 'NonBlockingGame', 'GameBase', 'NamedColor', 'NamedSymbol' ]
 
 
@@ -271,7 +276,8 @@
   python:
     student_files:
       - { name: 'Patterns in Song Lyrics Student Worksheet', link: 'https://docs.google.com/document/d/1PVm_5N6C5a7RyDaVGsUAnKlKgyAGa1YOBgynFOfZjrM/view' }
-      - { name: 'GridLyrics.py', link: 'https://drive.google.com/file/d/1TeqVoZ3mgvkz-koTelCVCP_UJxadV_6l/view' }
+      - { name: 'grid_lyrics.py', link: 'https://drive.google.com/file/d/1TeqVoZ3mgvkz-koTelCVCP_UJxadV_6l/view' }
+    teacher_files:  [ 'Patterns in Song Lyrics Worksheet Answer Key', 'grid_lyrics.py' ]
   documentation: [ 'Bridges', 'DataSource', 'Color', 'ColorGrid', 'Song' ]
 
 

@@ -13,3 +13,7 @@ Song : 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_
 Element: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1element_1_1_element.html'
 EarthquakeUSGS: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1data__src__dependent_1_1earthquake__usgs_1_1_earthquake_u_s_g_s.html'
 SLelement: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1sl__element_1_1_s_lelement.html'
+NonBlockingGame: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1non__blocking__game_1_1_non_blocking_game.html'
+GameBase: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1gamebase_1_1_game_base.html'
+NamedColor: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1named__color_1_1_named_color.html'
+NamedSymbol: 'http://bridgesuncc.github.io/doc/python-api/current/html/classbridges_1_1named__symbol_1_1_named_symbol.html'
