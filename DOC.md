@@ -14,7 +14,7 @@
 
 * **assets/images/**: Images used on this site, including example output images for each project.
 
-* **assets/main.scss**: A [Sass](https://sass-lang.com/guide) file which controls the styling of all pages.
+* **assets/main.scss**: A [Sass](https://sass-lang.com) file which controls the styling of all pages.
 
 * **assignments/search.js**: A Liquid-generated Javascript program that allows users to search for assignments.
 
