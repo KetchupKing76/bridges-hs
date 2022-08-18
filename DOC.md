@@ -2,7 +2,9 @@
 
 * **_data/assignments.yaml**: Data for each project (see [Project Structure](Project-Structure)).
 
-* **_data/bridges-links.yaml**: Links to BRIDGES classes, used in the "Documentation" section on project pages.
+* **_data/java_links.yaml**: Links to Java class documentation.
+
+* **_data/python_links.yaml**: Links to Python class documentation.
 
 * **_layouts/default.html**: The top-level layout used by all pages. Includes navigation bar, title bar, and copyright notice.
 
@@ -10,9 +12,11 @@
 
 * **.github/workflows/jekyll-deploy-action.yml**: A Github action which updates the `gh_pages` branch automatically whenever the `master` branch changes. (The source for this site is in the `master` branch; the generated HTML is in the `gh_pages` branch.) Copied from [here](https://github.com/marketplace/actions/jekyll-deploy-action).
 
-* **assets/images/**: Images for this site, including example output images for each project.
+* **assets/images/**: Images used on this site, including example output images for each project.
 
-* **assets/main.css**: A CSS file which controls the styling of all pages.
+* **assets/main.scss**: A [Sass](https://sass-lang.com/guide) file which controls the styling of all pages.
+
+* **assignments/search.js**: A Liquid-generated Javascript program that allows users to search for assignments.
 
 ## Project Structure
 
@@ -34,23 +38,19 @@ Each entry in assignments.yaml has the following attributes:
 
 * `outcomes` (optional): A list of intended learning outcomes. Each entry is an object with a `verb` field and an `outcome` field.
 
-* `student_files`: A list of student files, each with a name and a link.
+* `java` (optional): Files for the Java version of the assignment (code, worksheets, etc).
 
-* `scaffold_files`: A list of scaffold files, each with a name and a link.
+* `python` (optional): Files for the Python version of the assignment (code, worksheets, etc).
 
-* `teacher_files` (optional)
+* `documentation`: A list of BRIDGES classes used by the project. These classes must have entries in java_links.yaml and/or python_links.yaml (depending on which languages the project supports). Otherwise, the links on the project page will not work.
 
-* `solution_files` (optional)
-
-* `other_resources` (optional): A list of resource files, each with a name and a link. This could include images, explanatory documents, etc.
-
-* `documentation`: A list of BRIDGES classes used by the project. These classes must have entires in bridges_links.yaml or else the links will not work.
+`java` and `python` must each contain two sub-attributes: `student_files` and `teacher_files`. `student_files` is a list of files available to students (each with a name and a link), and `teacher_files` is a list of files available only to teachers.
 
 ## Running Locally
 
-Install Ruby along with the `jekyll` and `bundler` gems. See these pages for more detailed instructions:
+Install Ruby along with the `bundler` gem. See these pages for more detailed instructions:
 
 * [Quickstart](https://jekyllrb.com/docs/)
 * [Installation](https://jekyllrb.com/docs/installation/)
 
-Run `bundle exec jekyll serve` to view this site on a localhost server. The server will automatically update whenever you edit the files.
+Run `bundle exec jekyll serve` to view this site on a localhost server. The server will automatically update whenever you edit the files. (You may need to run `bundle install` first.)
