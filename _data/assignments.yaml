@@ -31,6 +31,11 @@
       - { name: 'Emoji Builder Scaffold', link: 'https://docs.google.com/document/d/1wH1QiaUZTEQSi9EmTZg31bIqoMMKea8Ci1CVyq24Mrs/view' }
       - { name: 'EmojiBuilder.java', link: 'https://drive.google.com/file/d/16uNsdHGgIkgEFsYjcNOxyRBL9ma0xU6B/view' }
     teacher_files: [ 'EmojiBuilder.java' ]
+  python:
+    student_files:
+      - { name: 'Emoji Builder Student Worksheet', link: 'https://docs.google.com/document/d/1oeMUTXgcFvk0IQTXIxQgECIMmESwbf53oQvZM5RrqjE/view' }
+      - { name: 'emojibuilder.py', link: 'https://drive.google.com/file/d/1RXQcqCH_6zJYa2jOn3i2JB22pab0w2j7/view' }
+    teacher_files: [ 'emojibuilder.py' ]
   documentation: [ 'NamedColor', 'NonBlockingGame' ]
 
 
