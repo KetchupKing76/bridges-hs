@@ -151,6 +151,11 @@
       - { name: 'GameBasics II Scaffold', link: 'https://docs.google.com/document/d/1Y2QvUvjDJBdMJGDoghOkoUF2p4U1s6717-L9Z_Vu56g/view' }
       - { name: 'GameBasics2.java', link: 'https://drive.google.com/file/d/1lQoGbIb_OVW-4sRZ_CGM7rli_Bs0Tc9l/view' }
     teacher_files: [ 'GameBasics II Teacher Walkthrough', 'GameBasics2.java' ]
+  python:
+    student_files:
+      - { name: 'GameBasics II Student Worksheet', link: 'https://docs.google.com/document/d/1ZhWOkszjj1dXRgNoVGxULgG9de4w06CdgBrw0d3vBJk/view' }
+      - { name: 'game_basics_2', link: 'https://drive.google.com/file/d/1wkzSNPn6KekRae_Y-XWXvUc-RCP1Gi5m/view' }
+    teacher_files: [ 'game_basics_2.py' ]
   documentation: [ 'NonBlockingGame', 'GameBase', 'NamedColor', 'NamedSymbol' ]
 
 
