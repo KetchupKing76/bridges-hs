@@ -1,0 +1,95 @@
+/* BASIC STYLING */
+body, html { height: 100%; margin: 0; }
+
+body { font-family: Arial, Helvetica, sans-serif; font-size: 1.2em; }
+
+.container { padding: 0px 24px; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'JetBrains Mono', monospace; font-weight: bold; }
+
+article h2 { border-bottom-color: #e9ecef; border-bottom-style: solid; border-bottom-width: thin; padding-bottom: .5rem; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+/* NAVBAR */
+.navbar-custom { background-color: white; }
+
+.navbar-custom .navbar-brand img { width: 70px; }
+
+@media only screen and (min-width: 448px) { .navbar-custom .navbar-brand img { width: 90px; } }
+
+.navbar-custom .nav-link { font-family: Arial, Helvetica, sans-serif; font-weight: 600; color: black; }
+
+.navbar-custom .nav-link:hover { text-decoration: none; }
+
+/* FOOTER */
+footer { margin-top: 4em; background-color: #212121; color: white; padding-top: 64px; padding-bottom: 48px; }
+
+/* TITLE BAR */
+.titlebar-container { padding: 0; border-bottom: 1px solid #cccccc; border-top: 1px solid #cccccc; background-color: #ebebeb; }
+
+.titlebar-container h1 { margin: 0 auto; padding: 24px; }
+
+/* MAIN PAGE */
+.banner-bg { background-color: black; padding-top: 80px; padding-bottom: 50px; }
+
+.banner-text { text-align: center; width: 100%; }
+
+.banner-text h1 { font-weight: 600; color: white; font-size: 2.2em; letter-spacing: 0.1em; }
+
+.banner-text a { margin-top: 1em; border-radius: 1em; }
+
+.banner-text a:hover { text-decoration: none; }
+
+#slogan { text-align: center; margin: 3rem 0; }
+
+#mission-statement { text-align: center; }
+
+#collage { margin-top: 24px; }
+
+/* ASSIGNMENT CARDS */
+#search { margin-top: 24px; width: 100%; }
+
+.assignment-card { margin: 24px 0px; display: grid; grid-template-rows: 12em; grid-template-columns: 35% 65%; }
+
+@media only screen and (min-width: 512px) { .assignment-card { grid-template-rows: 9em; } }
+
+@media only screen and (min-width: 768px) { .assignment-card { grid-template-columns: 25% 75%; } }
+
+.assignment-card .card-thumbnail img { object-fit: cover; height: 100%; width: 100%; }
+
+.card.link:hover { box-shadow: 0 0 11px rgba(33, 33, 33, 0.2); cursor: pointer; }
+
+/* TAGS */
+.tag { padding: 2px 8px; border-radius: 1em; border: 1px solid #cccccc; background-color: #ebebeb; }
+
+.language-tag { padding: 2px 8px; border-radius: 1em; border: 1px solid #a9c1ef; background-color: #dde6f9; }
+
+/* NOTES AND WARNINGS */
+.note { background-color: #dcf4ff; border-left: 6px solid #024e7a; }
+
+.warning { background-color: #ffdddc; border-left: 6px solid #7a0602; }
+
+.note, .warning { margin: 0 0 12px; padding: 12px; }
+
+.note p:last-child, .warning p:last-child { margin-bottom: 0; }
+
+/* TABLE OF CONTENTS */
+.assignment-container { margin-top: 1.5rem; }
+
+@media only screen and (min-width: 768px) { .assignment-container { display: grid; grid-template-columns: 25% 75%; } }
+
+.toc .entries { list-style-type: none; padding-left: 0; }
+
+@media only screen and (min-width: 768px) { .toc { position: sticky; top: 20px; } }
+
+/* ASSIGNMENT IMAGES */
+article.assignment img { margin: 0 auto; max-width: 100%; max-height: 22em; display: block; border-radius: .5em; }
+
+figure { display: table; max-width: 75%; padding: 0 auto; margin: 0em auto; }
+
+figcaption { text-align: left; font-size: .7em; margin-bottom: 16px; }
+
+/*# sourceMappingURL=main.css.map */
