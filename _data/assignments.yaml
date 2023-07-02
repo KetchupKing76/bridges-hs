@@ -351,6 +351,18 @@
     teacher_files: [ 'Earthquake Linked List Worksheet Answer Key', 'earthquake_list.py' ]
   documentation: [ 'Bridges', 'Element', 'EarthquakeUSGS', 'SLelement' ]
 
+- key: 'us-cities-map'
+  title: 'US Cities Map'
+  summary: 'Create a Map of Cities in the US'
+  tags: [ 'real-world data' ]
+  description: 'Use information stored in the bridges library to create a map of the cities in the United States. You will learn the basics of how hashmaps work as well as creating graphs in bridges. '
+  topics: [ 'City Class', 'Hashmap', 'Element Class', 'GraphAdjList' ]
+  java:
+    student_files:
+      - { name: 'US Cities Student Worksheet', link: 'https://docs.google.com/document/d/1eBlB-r8vDc7tfzOu5cdeXf8k5Fls-20rmDm58vhyr_g/view' }
+      - { name: 'USCitiesMapTemplate.java', link: 'https://drive.google.com/file/d/1wK94795TVWiU8rta3DZ5gf1xYMjPVBj-/view' }
+    teacher_files: [ 'US Cities Worksheet Answer Key', 'USCitiesMap.java' ]
+  documentation: [ 'Bridges', 'Element', 'GraphAdjList', 'City' ]
 
 - key: 'maze-generator'
   title: 'Maze Generator'

@@ -6,6 +6,7 @@ NamedSymbol : 'https://bridgesuncc.github.io/doc/java-api/current/html/enumbridg
 Grid : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_grid.html'
 ColorGrid : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_color_grid.html'
 Color : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_color.html'
+City : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1data__src__dependent_1_1_city.html'
 Element : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_element.html'
 GraphAdjList : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_graph_adj_list.html'
 Edge : 'https://bridgesuncc.github.io/doc/java-api/current/html/classbridges_1_1base_1_1_edge.html'
