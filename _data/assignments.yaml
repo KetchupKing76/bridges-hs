@@ -411,3 +411,31 @@
       - { name: 'StreetMap.java', link: 'https://drive.google.com/file/d/16wtzboVzDxKv5cDpccyA_J5GRhEuBhJv/view' }
     teacher_files: [ 'Street Map Teacher Walkthrough', 'Street Map Worksheet Answer Key', 'Main.java', 'StreetMap.java' ]
   documentation: [ 'Bridges', 'Color', 'Element', 'GraphAdjList', 'Edge', 'DataSource', 'OsmVertex', 'OsmEdge' ]
+
+- key: 'ben'
+  title: 'Ben'
+  summary: 'Create a player that can be moved around the game board with keyboard input.'
+  tags: [ 'game', '2d grid' ]
+  description: 'In this second game basics project, students use the NonBlockingGame class to create a player that can be moved around the screen with the arrow keys.'
+  topics: [ '2D arrays', 'API usage (NonBlockingGame class, NamedSymbol enum, NamedColor enum)', 'Event-driven programming' ]
+  outcomes:
+    - { verb: 'Apply', outcome: 'Create objects by calling constructors with parameters. (AP CS A Unit 2, MOD-1.D)' }
+    - { verb: 'Apply', outcome: 'Use typed variables to represent and refer to data. (AP CS A Unit 2, VAR-1.D)' }
+    - { verb: 'Apply', outcome: 'Represent branching logical processes with conditional statements. (AP CS A Unit 3, CON-2.C)' }
+    - { verb: 'Apply', outcome: 'Use understanding of rows and columns while creating algorithms for nested iteration. (AP CS A Unit 4, CON-2.C, CON-2.E, CON-2.G)' }
+    - { verb: 'Apply', outcome: 'Use understanding of "out of bounds" errors when debugging code. (AP CS A Unit 8, CON-2.N)' }
+    - { verb: 'Apply', outcome: 'Use API documentation to figure out how to use Java library classes.' }
+    - { verb: 'Apply', outcome: 'Use documentation and class headers to determine inheritance relationships. (AP CS A Unit 9, MOD-3.B)' }
+    - { verb: 'Analyze', outcome: 'Analyze library class code, applying understanding of abstract/concrete classes, abstract/concrete methods, constructors, and instance variables. (AP CS A Units 2, 5, and 9)' }
+  java:
+    student_files:
+      - { name: 'Ben Student Worksheet', link: 'https://docs.google.com/document/d/1liUUBin6QVxC7EpL5wcU-WyqfXMynSyZryfUUeyUlsQ/view' }
+      - { name: 'Ben Scaffold', link: 'https://docs.google.com/document/d/1Y2QvUvjDJBdMJGDoghOkoUF2p4U1s6717-L9Z_Vu56g/view' }
+      - { name: 'Ben.java', link: 'https://drive.google.com/file/d/1lQoGbIb_OVW-4sRZ_CGM7rli_Bs0Tc9l/view' }
+    teacher_files: [ 'Ben Teacher Walkthrough', 'Ben.java' ]
+  python:
+    student_files:
+      - { name: 'Ben Student Worksheet', link: 'https://docs.google.com/document/d/1ZhWOkszjj1dXRgNoVGxULgG9de4w06CdgBrw0d3vBJk/view' }
+      - { name: 'ben', link: 'https://drive.google.com/file/d/1wkzSNPn6KekRae_Y-XWXvUc-RCP1Gi5m/view' }
+    teacher_files: [ 'ben.py' ]
+  documentation: [ 'NonBlockingGame', 'GameBase', 'NamedColor', 'NamedSymbol' ]
